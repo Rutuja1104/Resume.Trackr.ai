@@ -4,8 +4,8 @@ import FileUploader from "~/components/FileUploader";
 import {usePuterStore} from "~/lib/puter";
 import {useNavigate} from "react-router";
 import {generateUUID} from "~/lib/utils";
-import { convertPdfToImage } from '~/lib/pdf2Img';
 import { prepareInstructions } from '~/constants';
+import { convertPdfToImage } from '~/lib/pdf2img';
 
 const Upload = () => {
     const { auth, isLoading, fs, ai, kv } = usePuterStore();
@@ -60,7 +60,7 @@ const Upload = () => {
         await kv.set(`resume:${uuid}`, JSON.stringify(data));
         setStatusText('Analysis complete, redirecting...');
         console.log(feedback, "DATATATATA",data);
-        // navigate(`/resume/${uuid}`);
+        navigate(`/resume/${uuid}`);
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
