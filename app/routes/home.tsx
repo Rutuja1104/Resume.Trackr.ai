@@ -48,14 +48,14 @@ export default function Home() {
         )}
       </div>
       {
-        loadingRresumes && (
+        loadingRresumes ? (
           <div className="flex flex-col items-center justify-center">
             <img src="/images/resume-scan-2.gif" className="w-[200px]"/>
           </div>
-        )
+        ) : <></>
       }
       {
-        !loadingRresumes && resumes?.length && (
+        !loadingRresumes && resumes?.length ? (
           <div className={"resumes-section"}>
             {resumes.map((resume) => {
               return (
@@ -63,7 +63,7 @@ export default function Home() {
               )
             })}
           </div>
-        )
+        ) : <></>
       }
       {!loadingRresumes && resumes?.length ===0 && (
         <div className="flex flex-col items-center justify-center mt-10 gap-4">
