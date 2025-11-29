@@ -19,7 +19,7 @@ const ScoreBadge = ({ score }: { score: number }) => {
           )}
       >
         <img
-            src={score > 69 ? "/icons/check.svg" : "/icons/warning.svg"}
+            src={score > 69 ? "/Resume.Trackr.ai/icons/check.svg" : "/Resume.Trackr.ai/icons/warning.svg"}
             alt="score"
             className="size-4"
         />
@@ -66,7 +66,7 @@ const CategoryContent = ({
               <div className="flex flex-row gap-2 items-center" key={index}>
                 <img
                     src={
-                      tip.type === "good" ? "/icons/check.svg" : "/icons/warning.svg"
+                      tip.type === "good" ? "/Resume.Trackr.ai/icons/check.svg" : "/Resume.Trackr.ai/icons/warning.svg"
                     }
                     alt="score"
                     className="size-5"
@@ -90,8 +90,8 @@ const CategoryContent = ({
                   <img
                       src={
                         tip.type === "good"
-                            ? "/icons/check.svg"
-                            : "/icons/warning.svg"
+                            ? "/Resume.Trackr.ai/icons/check.svg"
+                            : "/Resume.Trackr.ai/icons/warning.svg"
                       }
                       alt="score"
                       className="size-5"

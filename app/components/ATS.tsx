@@ -20,10 +20,10 @@ const ATS: React.FC<ATSProps> = ({ score, suggestions }) => {
 
   // Determine icon based on score
   const iconSrc = score > 69
-    ? '/icons/ats-good.svg'
+    ? '/Resume.Trackr.ai/icons/ats-good.svg'
     : score > 49
-      ? '/icons/ats-warning.svg'
-      : '/icons/ats-bad.svg';
+      ? '/Resume.Trackr.ai/icons/ats-warning.svg'
+      : '/Resume.Trackr.ai/icons/ats-bad.svg';
 
   // Determine subtitle based on score
   const subtitle = score > 69
@@ -54,7 +54,7 @@ const ATS: React.FC<ATSProps> = ({ score, suggestions }) => {
           {suggestions.map((suggestion, index) => (
             <div key={index} className="flex items-start gap-3">
               <img
-                src={suggestion.type === "good" ? "/icons/check.svg" : "/icons/warning.svg"}
+                src={suggestion.type === "good" ? "/Resume.Trackr.ai/icons/check.svg" : "/Resume.Trackr.ai/icons/warning.svg"}
                 alt={suggestion.type === "good" ? "Check" : "Warning"}
                 className="w-5 h-5 mt-1"
               />

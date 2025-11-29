@@ -51,13 +51,13 @@ const FileUploader = ({ file, onFileSelect }: FileUploaderProps) => {
                                     onFileSelect?.(null); // clears parent state
                                 }}
                             >
-                                <img src="/icons/cross.svg" alt="remove" className="w-4 h-4" />
+                                <img src="/Resume.Trackr.ai/icons/cross.svg" alt="remove" className="w-4 h-4" />
                             </button>
                         </div>
                     ) : (
                         <div>
                             <div className="mx-auto w-16 h-16 flex items-center justify-center mb-2">
-                                <img src="/icons/info.svg" alt="upload" className="size-20" />
+                                <img src="/Resume.Trackr.ai/icons/info.svg" alt="upload" className="size-20" />
                             </div>
                             <p className="text-lg text-gray-500">
                                 <span className="font-semibold">Click to upload</span> or drag and drop
