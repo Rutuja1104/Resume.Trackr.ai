@@ -36,7 +36,7 @@ export default function Home() {
     loadingRresumes()
   }, [auth.isAuthenticated])
 
-  return <main className={"bg-[url('/images/bg-main.svg')] bg-cover"}>
+  return <main className={"bg-[url('/Resume.Trackr.ai/images/bg-main.svg')] bg-cover"}>
     <Navbar />
     <section className={"main-section"} >
       <div className={"page-heading py-16"}>
@@ -50,7 +50,7 @@ export default function Home() {
       {
         loadingRresumes ? (
           <div className="flex flex-col items-center justify-center">
-            <img src="/images/resume-scan-2.gif" className="w-[200px]"/>
+            <img src="/Resume.Trackr.ai/images/resume-scan-2.gif" className="w-[200px]"/>
           </div>
         ) : <></>
       }
