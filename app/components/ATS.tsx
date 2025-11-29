@@ -67,7 +67,7 @@ const ATS: React.FC<ATSProps> = ({ score, suggestions }) => {
       </div>
 
       {/* Closing encouragement */}
-      <p className="text-gray-700 italic">
+      <p className="text-gray-700 italic test">
         Keep refining your resume to improve your chances of getting past ATS filters and into the hands of recruiters.
       </p>
     </div>
